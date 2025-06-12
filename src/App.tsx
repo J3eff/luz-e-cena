@@ -1,7 +1,8 @@
+import Banner from "./Banner";
 
 function App() {
   return (
-    <h1>Olá mundo</h1>
+    <Banner src="./banner-desktop.png" alt="Banner" />
   )
 }
 
