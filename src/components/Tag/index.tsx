@@ -17,7 +17,7 @@ const tagClasses = {
 };
 
 const Tag = ({ value }: TagProps) => {
-  const classes = classNames(styles, tagClasses[value]);
+  const classes = classNames(styles.tag, tagClasses[value]);
   return <span className={classes}>{value}</span>;
 };
 

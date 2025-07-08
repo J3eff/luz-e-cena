@@ -4,8 +4,7 @@ import styles from "./CardMovie.module.css";
 
 
 const CardMovie = (props: Movie) => {
-  const { src, alt, titulo, genero, categoria, duracao, censura } = props;
-
+  const { alt, src, titulo, genero, categoria, censura, duracao } = props;
   return (
     <li className={styles.card}>
       <img src={src} alt={alt} />
