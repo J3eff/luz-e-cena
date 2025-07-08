@@ -5,7 +5,7 @@ type FieldseatProps = {
   variant?: "primary" | "secondary";
 } & React.FieldsetHTMLAttributes<HTMLFieldSetElement>;
 
-const Fieldset = ({ children, variant }: FieldseatProps) => {
+const Fieldset = ({ children, variant = "primary" }: FieldseatProps) => {
   return (
     <fieldset
       className={`${styles.inputWrapper} ${
