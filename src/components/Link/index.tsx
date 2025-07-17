@@ -1,12 +1,15 @@
-import styles from './Link.module.css'
-import React from 'react';
+import React from "react";
+import styles from "./Link.module.css";
 
-
-
-const Link = ({ children, ...rest }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
+const Link = ({
+  children,
+  ...rest
+}: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
   return (
-   <a {...rest} className={styles.link}>{children}</a>
-  )
-}
+    <a className={styles.link} {...rest}>
+      {children}
+    </a>
+  );
+};
 
-export default Link
+export default Link;
